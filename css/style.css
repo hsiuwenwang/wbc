@@ -1,0 +1,235 @@
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button,textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+img {border: 0;}
+:focus {outline: 0;}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 100%;
+}
+input, button, textarea,select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+code, kbd, samp, tt {font-size: 100%;}
+
+/*purpose To enable resizing for IE */
+/*branch For IE6-Win, IE7-Win */
+input, button, textarea, select {*font-size: 100%;}
+body {line-height: 160%;}
+ol, ul, li {list-style: none;}
+:link, :visited , ins {text-decoration: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+
+/*HTML5 tag*/
+section, article, aside, footer, header, nav, main {
+  display:block;
+}
+
+.main {
+    border-width: 2px;
+    border-color: #076689;
+    border-style: solid;
+    
+    border: 2px solid #076689;
+    
+}
+
+h2 {
+    border-top-width: 3px;
+    border-top-color: #ccc;
+    border-top-style: solid;
+    
+    border-bottom-width: 3px;
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    
+    border: 1px solid #ccc;
+    
+}
+
+input {
+    font-size: 16px;
+    border-width: 0;
+    background-color: #15487b;
+}
+
+textarea {
+    border-width: 1px;
+    border-color: #0d7e4e;
+    border-style: solid;
+   /*可以合併寫一行*/ 
+    border: 1px solid #0d7e4e;
+}
+
+button {
+    background-color: #555;
+    font-size: 16px;
+}
+/*-------
+近期文章
+---------*/
+
+.widget {
+    border: 8px solid #eee;
+    padding: 10px 30px;
+    width: 230px;
+}
+
+.widget > .title {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.widget-media {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.widget-media-img {
+    float: left;
+    margin-right: 10px;
+}
+
+.widget-media-content {
+    /*
+    float: left;
+    width: 170px;
+    */
+    overflow: hidden;
+}
+
+.widget-media-content .date {
+    font-size: 13px;
+    font-style: italic;
+    color: #888;
+}
+
+.border-reset {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+/*-------
+推薦文章
+---------*/
+.inner {
+    padding-left: 0;
+    padding-right: 0;
+    width: 290px;
+    /*230 +30 +30 = 290*/
+}
+.widget-thumb-content {
+        margin: 10px 20px;
+    }
+.info li {
+    display: inline-block;
+    font-size: 13px;
+    color: #888;
+}
+.info li::after {
+    content: "|";
+    padding: 0 3px 0 5px;
+}
+.info li:last-child::after{
+    content: "";
+}
+/*-------
+單篇文章
+---------*/
+
+.article {
+    width: 600px;
+    background: #eee;
+    padding: 10px 20px;
+}
+
+.article-content {
+    background: #fff;
+    margin: 0 20px;
+    padding: 30px;
+}
+
+.article-content .title {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.article-content .title a {
+    color: #000;
+}
+
+.article-content .title a:hover {
+    color: #11721c;
+}
+
+.article-content .category {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.article-content .category li {
+    display: inline-block;
+}
+
+.article-content .category li a{
+    color: #999;
+}
+
+.article-content .category li::after {
+    content: "/";
+    color: #999;
+    padding: 0 3px 0 5px;
+}
+
+.article-content .category li:last-child::after {
+    content: "";
+}
+
+.article-content .more {
+    text-align: center;
+}
+
+.article-content .more a {
+    display: inline-block;
+    background: #1eb92f;
+    color: #fff;
+    padding: 3px 5px;
+}
+
+.article-meta {
+    overflow: hidden;
+}
+
+.article-info {
+    float: left;
+    font-size: 13px;
+    color: #888;
+}
+
+.article-social {
+    float: right;
+    font-size: 13px;
+}
+
+.article-social li {
+    display: inline-block;
+}

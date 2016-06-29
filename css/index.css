@@ -1,0 +1,23 @@
+.container{
+ background: grey;
+ /*overflow: hidden;*/
+    /*溢位就隱藏*/
+}
+.container::after{
+    content: "test";
+    display: block;
+    clear: both;
+}
+.main{
+    background: red;
+    width: 300px;
+    height: 100px;
+    float: left;
+}
+.sidebar{
+    background: blue;
+    width: 200px;
+    height: 100px;
+    padding-top: 100px;
+    float: left;
+}
